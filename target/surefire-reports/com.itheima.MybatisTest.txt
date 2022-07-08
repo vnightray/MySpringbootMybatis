@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: com.itheima.MybatisTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.746 s <<< FAILURE! - in com.itheima.MybatisTest
+test(com.itheima.MybatisTest)  Time elapsed: 2.079 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\useful\springbootdemo\springboot_mybatis\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mapper.UserMapper.queryUserList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.itheima.MybatisTest.test(MybatisTest.java:22)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\useful\springbootdemo\springboot_mybatis\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mapper.UserMapper.queryUserList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.itheima.MybatisTest.test(MybatisTest.java:22)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.itheima.MybatisTest.test(MybatisTest.java:22)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.itheima.MybatisTest.test(MybatisTest.java:22)
+
